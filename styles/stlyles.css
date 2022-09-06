@@ -1,0 +1,350 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    
+
+
+}
+
+
+.index{
+    display: flex;
+    background: rgb(0, 0, 0);
+    width: 100;
+    height: 40rem;
+}
+.titulo{
+    color: white;
+    padding: 7rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    
+}
+.texto_index{
+   
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    
+    
+}
+.imagen{
+    height: 35rem;
+    width: 35rem;
+}
+.imagen:hover {filter: blur(2px);}
+.span{
+    display: block;
+    font-family: 'Roboto Mono', monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 22ch;
+
+    animation: typing 2s steps(22),
+    blink .6s infinite step-end alternate;
+    overflow: hidden;
+    
+}
+
+@keyframes typing {
+    from { width: 0 }    
+}
+
+@keyframes blink {
+    50% { border-color: transparent }   
+}
+.texto_index .flecha {
+    padding-top: 7rem;
+    padding-left: 4rem;
+}
+
+.flecha{
+   
+      animation: blur 3s linear infinite;
+        line-height: 20px;
+        transition: all 0.5s;
+      
+       }
+       
+       @keyframes blur {
+        0%, 60% {
+         filter: blur(0);
+        }
+       
+        50% {
+         filter: blur(10px);
+        }
+}
+
+
+/* quien soy? */
+.quien{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 100;
+    height: 40rem;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+.quien .flecha{
+    position: relative;
+
+}
+/* Tarjeta*/
+.card {
+    --bg: #f7f7f8;
+    --hover-bg: #59CE8F;
+    --hover-text: #000000;
+    max-width: 60ch;
+    text-align: center;
+    background: var(--bg);
+    padding: 4em;
+    padding-block: 4em;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s cubic-bezier(.6,.4,0,1),transform .15s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .card__body {
+    color: #464853;
+    line-height: 1.5em;
+    font-size: 1em;
+  }
+  
+  .card > :not(span) {
+    transition: .3s cubic-bezier(.6,.4,0,1);
+  }
+  
+  .card > strong {
+    display: block;
+    font-size: 1.4rem;
+    letter-spacing: -.035em;
+  }
+  
+  .card span {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hover-text);
+    border-radius: 5px;
+    font-weight: bold;
+    top: 100%;
+    transition: all .3s cubic-bezier(.6,.4,0,1);
+    
+  }
+  
+  .card:hover span {
+    top: 0;
+    font-size: 1.2em;
+  }
+  
+  .card:hover {
+    background: var(--hover-bg);
+  }
+  
+  .card:hover>div,.card:hover>strong {
+    opacity: 0;
+  }
+
+.wave{
+    
+    margin-bottom: -2rem;
+}
+
+
+
+/* skills */
+
+
+.skills{
+    background: #59CE8F;
+    padding: 10rem;
+    width: 100;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#lista_skills ul { 
+    list-style:none; 
+}
+
+#lista_skills ul li { 
+    padding-left:5rem ;
+    font-size:30px; 
+}
+
+#lista_skills ul li a { 
+    display:block; 
+    width:100%; 
+    height:100%; 
+    padding: 0.50rem;
+    padding-left:10px;
+    text-decoration:none; 
+    color:#000000; 
+}
+
+#lista_skills ul li a:hover { 
+    -moz-transform:rotate(-5deg); 
+    -moz-box-shadow:10px 10px 20px #000000;
+    -webkit-transform:rotate(-5deg); 
+    -webkit-box-shadow:10px 10px 20px #000000;
+    transform:rotate(4deg); box-shadow:10px 10px 20px #000000; 
+    margin-left: 10px;
+}
+
+
+
+
+.experiencia{
+    width: 100%;
+    height: 40rem;
+    padding-bottom: 5rem;
+  background-color:rgb(255, 255, 255);
+  display:grid;
+  place-items:center;
+  
+}
+.img {
+    width: 30%;
+    height: 100%;
+    object-fit:cover;
+    
+    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+    
+    transform-origin:center;
+    transform:perspective(800px) rotateY(25deg);
+    transition:0.5s;
+  }
+  .container {
+    max-width:900px;
+    max-height:550px;
+   
+    
+    
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    
+  }
+  .container:hover .img {
+    opacity:0.3;
+  }
+  .container .img:hover {
+    transform:perspective(800px)       rotateY(0deg);
+    opacity:1;
+  }
+ 
+/* contacto */
+.contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000000;
+}
+.ul {
+    position: relative;
+    display: flex;
+    transform: rotate(-25deg) skew(25deg);
+    transform-style: preserve-3d;
+ }
+ .ul li {
+   position: relative;
+   list-style: none;
+   width: 60px;
+   height: 60px;
+   margin: 0px 20px;
+ }
+ .ul li:before{
+   content: '';
+   position: absolute;
+   bottom: -10px;
+   left: -5px;
+   width: 100%;
+   height: 10px;
+   background: #000000;
+   transform-origin: top;
+   transform: skewX(-41deg);
+ }
+ .ul li:after{
+   content: '';
+   position: absolute;
+   top:5px;
+   left: -9px;
+   width: 9px;
+   height: 100%;
+   background: #2a2a2a;
+   transform-origin: right;
+   transform: skewY(-49deg);
+ }
+ .ul li span{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex ;
+   background: #2a2a2a;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   transition: 1.5s ease-out;
+ }
+ .ul li:hover span {
+   z-index: 1000;
+   transition: .3s;
+  
+   box-shadow: -1px 1px 1px rgba(0, 0, 0, .5);
+ }
+ .ul li:hover span:nth-child(5){
+   transform: translate(40px, -40px);
+   opacity: 1;
+ }
+ .ul li:hover span:nth-child(4){
+   transform: translate(30px, -30px);
+   opacity: .8;
+ }
+ .ul li:hover span:nth-child(3){
+   transform: translate(20px, -20px);
+   opacity: .6;
+ }
+ .ul li:hover span:nth-child(2){
+   transform: translate(10px, -10px);
+   opacity: .4;
+ }.ul li:hover span:nth-child(1){
+   transform: translate(0px, 0px);
+   opacity: .2;
+ }
+ .ul li:nth-child(1):hover span{
+   background: #52E19F !important;
+ }
+ .ul li:nth-child(2):hover span{
+   background: #2C3456 !important;
+ }
+ .ul li:nth-child(3):hover span{
+   background: #EA6E96 !important;
+ }
+ .ul li:nth-child(4):hover span{
+   background: #FCEB00 !important;
+ }
+    
