@@ -13,8 +13,9 @@
 .index{
     display: flex;
     background: rgb(0, 0, 0);
-    width: 100;
+    width: 100%;
     height: 40rem;
+    flex-wrap: wrap;
 }
 .titulo{
     color: white;
@@ -23,6 +24,7 @@
     font-size: 1.5rem;
     
 }
+
 .texto_index{
    
     flex-direction: column;
@@ -77,6 +79,10 @@
         50% {
          filter: blur(10px);
         }
+}
+.wave_index{
+    
+  margin-top: -1rem;
 }
 
 
@@ -211,7 +217,7 @@
 }
 
 
-
+/* EXPERIENCIA */
 
 .experiencia{
     width: 100%;
@@ -254,13 +260,21 @@
     opacity:1;
   }
  
+
+
 /* contacto */
 .contacto{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     min-height: 100vh;
     background: #000000;
+}
+.titulo_curriculum{
+color: white;
+font-family: 'Roboto Mono', monospace;
+font-size: 1.5rem;
 }
 .ul {
     position: relative;
@@ -348,3 +362,151 @@
    background: #FCEB00 !important;
  }
     
+
+
+
+ /* medias querys */
+@media screen and (max-width:480px){
+  .index {
+    height: 30rem;
+   
+  
+  }
+  .titulo{
+    padding: 0;
+    margin-top: 8rem;
+    width: 10rem;
+    font-size: 20px;
+  
+   
+
+   }
+ .flecha {
+    visibility: hidden;
+    
+   }
+   .wave_index{
+    
+    margin-top: -1rem;
+}
+   .imagen{
+    height: 8rem;
+    width: 10rem;
+    visibility: hidden;
+
+   }
+   .titulo_curriculum{
+    visibility: hidden;
+
+
+   }
+}
+
+@media screen and (min-width:480px) and (max-width:960px) {
+  .index {
+    height: 30rem;
+   
+  
+  }
+  .titulo{
+    padding: 0;
+    margin-top: 8rem;
+    width: 10rem;
+    font-size: 1.8rem;
+  
+   
+
+   }
+ .flecha {
+    visibility: hidden;
+    
+   }
+   .wave_index{
+    
+    margin-top: -1rem;
+}
+   .imagen{
+    height: 8rem;
+    width: 10rem;
+    visibility: hidden;
+
+   }
+   .titulo_curriculum{
+    visibility: hidden;
+
+
+   }
+}
+@media screen and (min-width:960px) and (max-width:1100px) {
+  .index {
+    height: 30rem;
+   
+  
+  }
+  .titulo{
+    padding: 0;
+    margin-top: 8rem;
+    margin-left: 10rem;
+    width: 100%;
+    font-size: 1.8rem;
+  
+   
+
+   }
+ .flecha {
+    visibility: hidden;
+    
+   }
+   .wave_index{
+    
+    margin-top: -1rem;
+}
+   .imagen{
+    height: 8rem;
+    width: 10rem;
+    visibility: hidden;
+
+   }
+   .titulo_curriculum{
+    visibility: hidden;
+
+
+   }
+}
+
+@media screen and (min-width:1120px) and (max-width:1325px) {
+  .index {
+    height: 30rem;
+   
+  
+  }
+  .titulo{
+    padding: 0;
+    margin-top: 8rem;
+    margin-left: 10rem;
+    width: 100%;
+    font-size: 1.8rem;
+  
+   
+
+   }
+ .flecha {
+    visibility: hidden;
+    
+   }
+   .wave_index{
+    
+    margin-top: -1rem;
+}
+   .imagen{
+    height: 8rem;
+    width: 10rem;
+    visibility: hidden;
+
+   }
+   .titulo_curriculum{
+    visibility: hidden;
+
+
+   }
+}
