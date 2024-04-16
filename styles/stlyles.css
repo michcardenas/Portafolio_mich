@@ -8,20 +8,20 @@
 
 
 }
-
+img { max-width: 100%; }
 
 .index{
     display: flex;
     background: rgb(0, 0, 0);
     width: 100%;
-    height: 40rem;
-    flex-wrap: wrap;
+    height: 90rem;
+    position: relative;
 }
 .titulo{
     color: white;
-    padding: 7rem;
+    padding: 4rem;
     font-family: 'Roboto Mono', monospace;
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     
 }
 
@@ -93,7 +93,7 @@
     align-items: center;
     background: white;
     width: 100;
-    height: 40rem;
+    height: auto;
     flex-direction: column;
     justify-content: space-around;
    
@@ -104,24 +104,39 @@
 }
 /* Tarjeta*/
 .card {
-    --bg: #f7f7f8;
-    --hover-bg: #59CE8F;
-    --hover-text: #000000;
-    max-width: 60ch;
-    text-align: center;
-    background: var(--bg);
-    padding: 4em;
-    padding-block: 4em;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    transition: .3s cubic-bezier(.6,.4,0,1),transform .15s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-  }
+  --bg: #f7f7f8;
+  max-width: 80ch;
+  text-align: center;
+  background: var(--bg);
+  padding: 4em;
+  padding-block: 4em;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: .3s cubic-bezier(.6,.4,0,1),transform .15s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../img/tubo.gif') no-repeat center center / cover;
+  opacity: 0;
+  transition: opacity .3s cubic-bezier(.6,.4,0,1);
+  z-index: 1;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
   
   .card__body {
     color: #464853;
@@ -150,16 +165,19 @@
     color: var(--hover-text);
     border-radius: 5px;
     font-weight: bold;
-    top: 100%;
-    transition: all .3s cubic-bezier(.6,.4,0,1);
-    
-  }
-  
-  .card:hover span {
+    transition: opacity .3s cubic-bezier(.6,.4,0,1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 2;
+}
+
+.card:hover span {
+    opacity: 1;
     top: 0;
     font-size: 1.2em;
-  }
-  
+}
   .card:hover {
     background: var(--hover-bg);
   }
@@ -172,11 +190,38 @@
     
     margin-bottom: -2rem;
 }
+.imagen_git {
 
+  margin-top: 39rem;
+}
 
+.boton_git {
+  background-color: white;
+  color: black;
+  border-radius: 10em;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+  box-shadow: 0 0 0 0 black;
+}
+
+.boton_git:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black;
+};
+
+.boton_git:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+};
 
 /* skills */
-
+.skillsa{
+  color: white;
+}
 
 .skills{
     background: #59CE8F;
@@ -362,19 +407,57 @@ font-size: 1.5rem;
    background: #FCEB00 !important;
  }
     
+ #animated-element {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  width: 13rem;
+}
 
+#animated-element.fade-in {
+  opacity: 0;
+}
+#ordenador {
+  width: 13rem;
+}
 
+#animated-element.rotate {
+  animation: rotate 2s linear infinite;
+}
+.avion{
+  position: absolute;
+  bottom: 0;
+  height: 25rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
+}
+
+.ordenador{
+  height: 40rem;
+
+}
  /* medias querys */
 @media screen and (max-width:480px){
   .index {
-    height: 30rem;
+    height: 90rem;
+
    
   
   }
+  #animated-element {
+    width: 13rem;
+  }
+
+  #animated-element.rotate {
+    animation: rotate 2s linear infinite;
+  }
+  #ordenador {
+    width: 13rem;
+  }
   .titulo{
     padding: 0;
-    margin-top: 8rem;
+    margin-top: 2rem;
     width: 10rem;
     font-size: 20px;
   
@@ -403,14 +486,23 @@ font-size: 1.5rem;
 }
 
 @media screen and (min-width:480px) and (max-width:960px) {
-  .index {
-    height: 30rem;
+ .index {
+    height: 90rem;
    
   
   }
+  #animated-element {
+    width: 13rem;
+  }
+  #animated-element.rotate {
+    animation: rotate 2s linear infinite;
+  }
+  #ordenador {
+    width: 13rem;
+  }
   .titulo{
     padding: 0;
-    margin-top: 8rem;
+    margin-top: 2rem;
     width: 10rem;
     font-size: 1.8rem;
   
@@ -438,14 +530,23 @@ font-size: 1.5rem;
    }
 }
 @media screen and (min-width:960px) and (max-width:1100px) {
-  .index {
-    height: 30rem;
+ .index {
+    height: 35rem;
    
   
   }
+  #animated-element {
+    width: 13rem;
+  }
+  #animated-element.rotate {
+    animation: rotate 2s linear infinite;
+  }
+  #ordenador {
+    width: 13rem;
+  }
   .titulo{
     padding: 0;
-    margin-top: 8rem;
+    margin-top: 2rem;
     margin-left: 10rem;
     width: 100%;
     font-size: 1.8rem;
@@ -462,9 +563,9 @@ font-size: 1.5rem;
     margin-top: -1rem;
 }
    .imagen{
-    height: 8rem;
-    width: 10rem;
-    visibility: hidden;
+    height: 20rem;
+    width: 13rem;
+    /* visibility: hidden; */
 
    }
    .titulo_curriculum{
@@ -475,10 +576,19 @@ font-size: 1.5rem;
 }
 
 @media screen and (min-width:1100px) and (max-width:1325px) {
-  .index {
-    height: 30rem;
+ .index {
+    height: 90rem;
    
   
+  }
+  #animated-element {
+    width: 13rem;
+  }
+  #animated-element.rotate {
+    animation: rotate 2s linear infinite;
+  }
+  #ordenador {
+    width: 13rem;
   }
   .titulo{
     padding: 0;
@@ -509,4 +619,54 @@ font-size: 1.5rem;
 
 
    }
-}
+}@media screen and (min-width:1400px) and (max-width:15px) {
+  .index {
+     height: 90rem;
+    
+   
+   }
+   #animated-element {
+     width: 1rem;
+   }
+   #animated-element.rotate {
+     animation: rotate 2s linear infinite;
+   }
+   #ordenador {
+     width: 13rem;
+   }
+    .tituloo{
+     width: 5rem;
+    
+      
+      
+      }
+   .titulo{
+     padding: 0;
+     margin-top: 8rem;
+     margin-left: 10rem;
+     width: 100%;
+     font-size: 1.8rem;
+   
+    
+ 
+    }
+  .flecha {
+     visibility: hidden;
+     
+    }
+    .wave_index{
+     
+     margin-top: -1rem;
+ }
+    .imagen{
+     height: 8rem;
+     width: 10rem;
+     visibility: hidden;
+ 
+    }
+    .titulo_curriculum{
+     visibility: hidden;
+ 
+ 
+    }
+ }
