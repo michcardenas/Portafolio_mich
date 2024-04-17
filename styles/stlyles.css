@@ -4,9 +4,16 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+
     
 
 
+}
+body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Esto previene el desplazamiento horizontal */
 }
 img { max-width: 100%; }
 
@@ -440,10 +447,13 @@ font-size: 1.5rem;
  /* medias querys */
 @media screen and (max-width:480px){
   .index {
-    height: 90rem;
+    height: 40rem;
 
    
   
+  }
+  .card{
+    width: 10rem;
   }
   #animated-element {
     width: 13rem;
@@ -459,7 +469,9 @@ font-size: 1.5rem;
     padding: 0;
     margin-top: 2rem;
     width: 10rem;
-    font-size: 20px;
+    font-size: 1.2rem;
+    margin-right: 12rem;
+    white-space:pre-line ;
   
    
 
@@ -473,8 +485,7 @@ font-size: 1.5rem;
     margin-top: -1rem;
 }
    .imagen{
-    height: 8rem;
-    width: 10rem;
+   
     visibility: hidden;
 
    }
@@ -483,6 +494,7 @@ font-size: 1.5rem;
 
 
    }
+  
 }
 
 @media screen and (min-width:480px) and (max-width:960px) {
@@ -546,14 +558,16 @@ font-size: 1.5rem;
   }
   .titulo{
     padding: 0;
-    margin-top: 2rem;
-    margin-left: 10rem;
+    margin-top: 8rem;
     width: 100%;
     font-size: 1.8rem;
   
    
 
    }
+.maquina{
+  font-size: 2rem;
+}
  .flecha {
     visibility: hidden;
     
@@ -565,7 +579,7 @@ font-size: 1.5rem;
    .imagen{
     height: 20rem;
     width: 13rem;
-    /* visibility: hidden; */
+    visibility: hidden;
 
    }
    .titulo_curriculum{
@@ -593,17 +607,13 @@ font-size: 1.5rem;
   .titulo{
     padding: 0;
     margin-top: 8rem;
-    margin-left: 10rem;
     width: 100%;
     font-size: 1.8rem;
   
    
 
    }
- .flecha {
-    visibility: hidden;
-    
-   }
+
    .wave_index{
     
     margin-top: -1rem;
@@ -619,7 +629,7 @@ font-size: 1.5rem;
 
 
    }
-}@media screen and (min-width:1400px) and (max-width:15px) {
+}@media screen and (min-width:1325px) and (max-width:1650px) {
   .index {
      height: 90rem;
     
@@ -643,27 +653,24 @@ font-size: 1.5rem;
    .titulo{
      padding: 0;
      margin-top: 8rem;
-     margin-left: 10rem;
+     
      width: 100%;
-     font-size: 1.8rem;
+     font-size: 1.2rem;
+     display: flex;
+         display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
    
     
  
     }
-  .flecha {
-     visibility: hidden;
-     
-    }
+ 
     .wave_index{
      
      margin-top: -1rem;
  }
-    .imagen{
-     height: 8rem;
-     width: 10rem;
-     visibility: hidden;
- 
-    }
+   
     .titulo_curriculum{
      visibility: hidden;
  
