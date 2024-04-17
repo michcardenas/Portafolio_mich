@@ -571,6 +571,69 @@ font-size: 1.5rem;
 
   }
 }
+@media screen and (max-width:400px){
+  .index {
+    height: 40rem;
+
+   
+  
+  }
+  .card {
+    }
+
+  .card__body {
+    margin-top: 3rem;
+    font-size: 7.5px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    padding: 2rem;
+  }
+
+  .card > strong {
+    font-size: 1.2rem; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+  }
+  #animated-element {
+    width: 13rem;
+  }
+
+  #animated-element.rotate {
+    animation: rotate 2s linear infinite;
+  }
+  #ordenador {
+    width: 13rem;
+  }
+  .titulo{
+    padding: 0;
+    margin-top: 2rem;
+    width: 10rem;
+    font-size: 1.2rem;
+    margin-right: 12rem;
+    white-space:pre-line ;
+  
+   
+
+   }
+ .flecha {
+    visibility: hidden;
+    
+   }
+   .wave_index{
+    
+    margin-top: -1rem;
+}
+.imagen{
+   
+    visibility: hidden;
+
+   }
+   .titulo_curriculum{
+    visibility: hidden;
+
+
+   }
+   .card::before {
+    background-size: 112% 117%; /* Ajusta esto a tus necesidades */
+
+  }
+}
 @media screen and (min-width:600px) and (max-width:960px) {
  .index {
     height: 90rem;
