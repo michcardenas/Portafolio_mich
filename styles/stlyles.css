@@ -115,7 +115,7 @@ img { max-width: 100%; }
   max-width: 80ch;
   text-align: center;
   background: var(--bg);
-  padding: 4em;
+ 
   padding-block: 4em;
   border-radius: 5px;
   position: relative;
@@ -126,6 +126,8 @@ img { max-width: 100%; }
   justify-content: center;
   align-items: center;
   gap: 1em;
+  flex-wrap: wrap;
+
 }
 
 .card::before {
@@ -145,11 +147,12 @@ img { max-width: 100%; }
   opacity: 1;
 }
   
-  .card__body {
-    color: #464853;
-    line-height: 1.5em;
-    font-size: 1em;
-  }
+.card__body {
+  color: #464853;
+  line-height: 1.5em;
+  font-size: 1em;
+  word-wrap: break-word; /* Añade esta línea */
+}
   
   .card > :not(span) {
     transition: .3s cubic-bezier(.6,.4,0,1);
@@ -162,7 +165,7 @@ img { max-width: 100%; }
   }
   
   .card span {
-    position: absolute;
+    position: relative; /* Cambia esto */
     inset: 0;
     width: 100%;
     height: 100%;
@@ -445,15 +448,23 @@ font-size: 1.5rem;
 
 }
  /* medias querys */
-@media screen and (max-width:480px){
+@media screen and (max-width:550px){
   .index {
     height: 40rem;
 
    
   
   }
-  .card{
-    width: 10rem;
+  .card {
+    }
+
+  .card__body {
+    margin-top: 3rem;
+    font-size: 10.5px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+  }
+
+  .card > strong {
+    font-size: 1.2rem; /* Reduce el tamaño de la fuente en pantallas pequeñas */
   }
   #animated-element {
     width: 13rem;
@@ -484,7 +495,7 @@ font-size: 1.5rem;
     
     margin-top: -1rem;
 }
-   .imagen{
+.imagen{
    
     visibility: hidden;
 
@@ -497,7 +508,7 @@ font-size: 1.5rem;
   
 }
 
-@media screen and (min-width:480px) and (max-width:960px) {
+@media screen and (min-width:600px) and (max-width:960px) {
  .index {
     height: 90rem;
    
