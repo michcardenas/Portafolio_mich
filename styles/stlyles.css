@@ -448,7 +448,7 @@ font-size: 1.5rem;
 
 }
  /* medias querys */
-@media screen and (max-width:550px){
+@media screen and (max-width:600px){
   .index {
     height: 40rem;
 
