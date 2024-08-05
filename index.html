@@ -1,229 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/alien.png">
+    <meta charset="utf-8">
+    <title>Artisan Michcode</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Portafolio de Michael Cardenas" name="keywords">
+    <meta content="Portafolio de Michael Cardenas" name="description">
 
-    <link rel="stylesheet" href="styles/stlyles.css">
-    <!-- fonts   -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
-  <!-- Enlaces a las bibliotecas de ScrollMagic y TweenMax/TweenLite -->
-  <script src="js/uncompressed/ScrollMagic.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" type="image/png" href="img/cientifico-loco.png">
 
-  
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-    <title>Yo Programo Resto </title>
-</head>
-<body>
 
 
-     <!-- index -->
-     <div style="background-image: url('img/agua.gif'); background-position: center; background-repeat: no-repeat; background-size: 100% 200%;" id="index" class="index" >
-
-        <div >
-            
-            <div class="loader">
-                <img class="imagen" src="img/index_perfil.png" alt="Mich cardenas">
-               
-              </div>
-        </div>
-
-    <div class="texto_index">
-        <div class="titulo">
-           <span  class="span">Hola!
-        
-            <br>
-            Soy Michael Cardenas</span>
-            <br><br>
-            <div class="spacer s2"></div>
-            <div id="trigger" class="spacer s0"></div>
-            <div id="animate" class="box1 blue">
-              <h2  class="maquina">Desarrollador de software</h2>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Artisan</span>Michcode</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Inicio</a>
+                <a href="#about" class="nav-item nav-link">Conoceme</a>
+                <a href="#qualification" class="nav-item nav-link">Quality</a>
+                <a href="#skill" class="nav-item nav-link">Skill</a>
+                <a href="#service" class="nav-item nav-link">Service</a>
+                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                <a href="#testimonial" class="nav-item nav-link">Review</a>
+                <a href="#blog" class="nav-item nav-link">Blog</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
-                   </div>
-        <div class="tituloo">
-            
-         </div>
-         <!-- <div class="ordenador" > </div>  -->
-
-    </div>
-
-
-
-    </div>
-
-    <!-- quien soy? -->
-    <div  id="quien" class="quien">
-
-        <div class="flecha">
-            <a href="#index"><img src="img/flecha_negra.png" alt="flecha"></a>  
-            <a href="#index"><img src="img/flecha_negra.png" alt="flecha"></a>  
-          </div>
-        
-        <div class="card">
-                <img viewBox="0 0 24 24" height="40" width="40" src="img/alien.png" alt="Alien">
-              
-            </img>
-            <strong> Perfil Profesional
-            </strong>
-            <div class="card__body">
-              Soy un Desarrollador de Software con más de cuatro años de experiencia, especializado en la creación e integración de aplicaciones web y sistemas IVR. Mi experiencia va desde el trabajo con tecnologías y marcos de trabajo como PHP, Laravel, HTML, CSS, Javascript hasta la implementación de APIs RESTful y SOAP. Destaco en la integración de pasarelas de pago y sistemas de facturación electrónica, demostrando mi capacidad para liderar desarrollos y ofrecer soluciones tecnológicas innovadoras en entornos desafiantes. <br><br>Mi trayectoria incluye contribuciones significativas a proyectos para entidades públicas y corporaciones de renombre, (DIAN,Fedegan,bodytech,movistar,etb,codensa,gobernaciones,superfinanciera,udistrtital) donde mi trabajo ha sido esencial para el éxito de complejas integraciones y desarrollos. Apasionado por el aprendizaje continuo y la mejora constante, busco oportunidades que me permitan aportar valor y crecer profesionalmente.             </div>
-            <span>
-              
-              <div  class="imagen_git boton_git">  <a style="color: black; text-decoration: none;" target="_blank" href="https://github.com/michcardenas"><img height="40" width="40"  src="img/git.png" alt="Github"> <br>Conoceme </a>
-          </div>
-          </span>
+            <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
         </div>
-        <div class="flecha">
-            <a href="#skills"><img src="img/flecha_verde.png" alt="flecha"></a>  
-            <a href="#skills"><img src="img/flecha_verde.png" alt="flecha"></a>  
-          </div>
-    </div>
-   
-    </div>
-    
-    
-    
-    
-    
-    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#53c268" fill-opacity="1" d="M0,64L48,85.3C96,107,192,149,288,181.3C384,213,480,235,576,240C672,245,768,235,864,202.7C960,171,1056,117,1152,85.3C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-    </svg>
+    </nav>
+    <!-- Navbar End -->
 
 
-
-
-
-
-     <!-- Skilss -->
-     <div style="background-image: url('img/green.gif'); background-position: center; background-repeat: no-repeat; background-size: 100% 200%;" id="skills" class="skills">
-     
-        <div class="flecha blanca">
-            <a href="#quien"><img src="img/flecha_blanca_abajo.png" alt="flecha"></a>  
-            <a href="#quien"><img src="img/flecha_blanca_abajo.png" alt="flecha"></a>  
-          </div>
-        <h2>Skills</h2>
-        <div id="lista_skills">
-            <ul>
-                <li><a class="skillsa" href="#"><img height="40" width="40"   src="img/figma.png" alt="FIGMA"> FIGMA</a></li>
-                <li><a class="skillsa" href="#"><img height="40" width="40"   src="img/postman.png" alt="Postman"> Postman</a></li>
-                <li><a class="skillsa" href="#"><img height="40" width="40"   src="img/html.png" alt="html"> HTML</a></li>
-                <li><a class="skillsa" href="#"><img height="40" width="40"   src="img/css.png" alt="css"> CSS (Bootstrap)</a></li>
-                <li><a class="skillsa" href="#"><img height="40" width="40"   src="img/js.png" alt="js"> Javascript</a></li>
-                <li><a class="skillsa" href="#"><img height="40" width="40"   src="img/php.png" alt="php"> PHP</a></li>
-                <li><a class="skillsa" href="#"><img height="40" width="40"   src="img/laravel.png" alt="laravel"> Laravel</a></li>
-                <li><a class="skillsa" href="#"><img height="40" width="40"   src="img/bases.png" alt="bases"> BDM (Mysql,sqldeveloper y postgresql)</a></li>
-                <li><a class="skillsa" href="#"><img height="40" width="40"   src="img/api.png" alt="api"> Creacion Y consumo APIS</a></li>
-                <li><a class="skillsa" href="#"> <img height="40" width="40"   src="img/git.png" alt="Github"> GIT </a></li>
-            </ul>
+<!-- Video Modal Start -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal-background">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Experiencia</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-container">
+                    <div class="modal-item">
+                        <div class="modal-content-item">
+                            <h2>Lavenir apps</h2>
+                            <span>IVR interactivo</span>
+                        </div>
+                    </div>
+                    <div class="modal-item">
+                        <div class="modal-content-item">
+                            <h2>NTTDATA</h2>
+                            <span>Proyecto recobre-Enel pasarela de pagos</span>
+                        </div>
+                    </div>
+                    <div class="modal-item">
+                        <div class="modal-content-item">
+                            <h2>Realtech</h2>
+                            <span>Pasarelas de pagos y facturacion electronica</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-       
-        
-        <div class="flecha blanca">
-            <a href="#experiencia"><img src="img/flecha.png" alt="flecha"></a>  
-            <a href="#experiencia"><img src="img/flecha.png" alt="flecha"></a>  
-          </div>
-          
-    
-
     </div>
+</div>
+
+
+
     
-         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#53c268" fill-opacity="1" d="M0,192L34.3,186.7C68.6,181,137,171,206,181.3C274.3,192,343,224,411,250.7C480,277,549,299,617,277.3C685.7,256,754,192,823,149.3C891.4,107,960,85,1029,106.7C1097.1,128,1166,192,1234,218.7C1302.9,245,1371,235,1406,229.3L1440,224L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
-          </svg>   
+    <!-- Video Modal End -->
 
 
-
-          <div class="spacer s2"></div>
-      <!-- experiencia -->
-      <div id="experiencia" class="experiencia">
-        <div class="flecha">
-            <a href="#skills"><img src="img/flecha_negra.png" alt="flecha"></a>  
-            <a href="#skills"><img src="img/flecha_negra.png" alt="flecha"></a>  
-          </div>
-          <br><br>
-
-        <h2>Experiencia</h2>
-        <br><br>
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
         <div class="container">
-            <img class="img" src="img/1.png" alt="">
-            <img class="img" src="img/nttdata.png" alt="">
-            <img class="img" src="img/Realtech.png" alt="">
-          </div>
-
-          <div class="flecha">
-            <a href="#contacto"><img src="img/flecha_negra_abajo.png" alt="flecha"></a>  
-            <a href="#contacto"><img src="img/flecha_negra_abajo.png" alt="flecha"></a>  
-          </div>
-       
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.png" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">Yo soy</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Michael Cardenas</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Desarrollador  de software</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="cv/michaelcardenasCV.pdf" class="btn btn-outline-light mr-5" download="michaelcardenasCV.pdf">Descargar CV</a>
+                        <button type="button" class="btn-play" data-toggle="modal"
+                             data-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Mi trabajo!</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#00000" fill-opacity="1" d="M0,128L24,112C48,96,96,64,144,85.3C192,107,240,181,288,181.3C336,181,384,107,432,96C480,85,528,139,576,149.3C624,160,672,128,720,101.3C768,75,816,53,864,80C912,107,960,181,1008,202.7C1056,224,1104,192,1152,181.3C1200,171,1248,181,1296,165.3C1344,149,1392,107,1416,85.3L1440,64L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
-      </svg>
-      
-     <!-- Contacto -->
-     
-     <div id="contacto" class="contacto">
-        
+    <!-- Header End -->
 
-        <h2 class="titulo">Contacto</h2>
-        <div>
-            <ul class="ul"> 
-              <li>
-                <a target="_blank" href="https://github.com/michcardenas">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span class="fa fa-github"></span>
-                </a> 
-              </li>
-              <li>
-                <a target="_blank" href="https://api.whatsapp.com/send/?phone=%2B573024899201">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span class="fa fa-whatsapp"></span>
-                </a> 
-              </li>
-              <li>
-                <a target="_blank" href="https://www.linkedin.com/in/michael-cardenas-0216/">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span class="fa fa-linkedin"></span>
-                </a> 
-              </li>
-             
-              <li>
-                <a download="Curriculum" href="documentos/curriculum.pdf">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span  class="fa fa-download"></span>
-                  
-                </a> 
-                
-              </li>
-            </ul>  
-          </div> 
-          <h2 class="titulo_curriculum">Curriculum</h2>
-          
-          
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Conóceme</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Acerca de mí</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.png" alt="Michael Cardenas" style="
+                    transition: filter 0.3s ease;
+                " onmouseover="this.style.filter='blur(5px)';" onmouseout="this.style.filter='blur(0)';">
+                                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Desarrollador de Software</h3>
+                    <p>Soy Michael Cardenas, un apasionado Desarrollador de Software con más de cuatro años de experiencia en la creación e integración de aplicaciones web y sistemas IVR. Especializado en PHP, Laravel, HTML, CSS, Javascript, y en la implementación de APIs RESTful y SOAP. Destaco en la integración de pasarelas de pago y sistemas de facturación electrónica, ofreciendo soluciones tecnológicas innovadoras en entornos desafiantes.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Nombre: <span class="text-secondary">Michael Cardenas</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Grado: <span class="text-secondary">Ingeniería de Sistemas</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experiencia: <span class="text-secondary">4 Años</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Teléfono: <span class="text-secondary">(57) 302 489 9201</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">michcardenas001@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Ubicación: <span class="text-secondary">Bogotá, Colombia</span></h6></div>
+                    </div>
+                    <a href="https://michcardenas.github.io/Portafolio_mich/" class="btn btn-outline-primary mr-4">Contrátame</a>
+                    <a href="https://www.linkedin.com/in/michael-cardenas-0216/" class="btn btn-outline-primary">Saber Más</a>
+                </div>
+            </div>
+        </div>
+        
     </div>
-   <script>
+    <!-- About End -->
 
-        
 
-  </script>
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Calidad</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Educación y Experiencia</h1>
+            </div>
+            <div class="row align-items">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Mi Educación</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Ingeniería de Sistemas</h5>
+                            <p class="mb-2"><strong>Corporación Unificada Nacional (CUN)</strong> | <small>2020 - en curso</small></p>
+                            <p>Actualmente cursando Ingeniería de Sistemas, con un enfoque en el desarrollo de aplicaciones web y móviles, aprendiendo las mejores prácticas y tecnologías modernas para crear soluciones innovadoras y eficientes.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Diplomado en Desarrollo Web y Móvil</h5>
+                            <p class="mb-2"><strong>Universidad Nacional de Colombia</strong> | <small>2021</small></p>
+                            <p>Diplomado especializado en desarrollo web y móvil, utilizando tecnologías como HTML, CSS, JavaScript, y frameworks modernos. Este programa ha fortalecido mi habilidad para crear interfaces de usuario atractivas y funcionales.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-2">Mi Experiencia</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Ingeniero de Desarrollo</h5>
+                            <p class="mb-2"><strong>Realtech Ltda</strong> | <small>Agosto 2023 - Presente</small></p>
+                            <p>Responsable de la integración de pasarelas de pago mediante APIs REST y SOAP, colaborando con entidades destacadas como FEDEGAN, DIAN y gobernaciones nacionales. Lideré el desarrollo de una API estratégica para la facturación electrónica, demostrando mi capacidad para resolver desafíos técnicos complejos.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Ingeniero de Software Junior</h5>
+                            <p class="mb-2"><strong>NTTDATA</strong> | <small>Septiembre 2022 - Agosto 2023</small></p>
+                            <p>Participé en el desarrollo y mejora de soluciones para clientes como ENEL Codensa, Bodytech y Telefónica Movistar, manejando tecnologías tanto de front-end como de back-end. Mi rol incluyó la identificación y resolución de bugs, así como el diseño de interfaces utilizando herramientas modernas.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Desarrollador Junior</h5>
+                            <p class="mb-2"><strong>Lavenir Apps</strong> | <small>Octubre 2020 - Septiembre 2022</small></p>
+                            <p>Desarrollé y brindé soporte a un sistema IVR innovador para ETB, mejorando la experiencia del cliente mediante la conexión con APIs fundamentales. También contribuí al desarrollo de un módulo de pagos para servicios de hogar, utilizando tecnologías de punta para garantizar soluciones efectivas y eficientes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <!-- Qualification End -->
+
+
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #5e93c7;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Mis Skills</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                            <h6 class="font-weight-bold">95%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">CSS</h6>
+                            <h6 class="font-weight-bold">85%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">PHP</h6>
+                            <h6 class="font-weight-bold">90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Javascript</h6>
+                            <h6 class="font-weight-bold">90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Laravel</h6>
+                            <h6 class="font-weight-bold">95%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Wordpress</h6>
+                            <h6 class="font-weight-bold">85%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skill End -->
+
+
+<!-- Servicios Inicio -->
+<div class="container-fluid pt-5" id="service">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Servicios</h1>
+            <h1 class="position-absolute text-uppercase text-primary">Mis Servicios</h1>
+        </div>
+        <div class="row pb-3">
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                    <h4 class="font-weight-bold m-0">Desarrollo Web</h4>
+                </div>
+                <p>Especializado en la creación de aplicaciones web robustas y escalables utilizando PHP, Laravel, HTML, CSS y JavaScript.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                    <h4 class="font-weight-bold m-0">Integración de APIs</h4>
+                </div>
+                <p>Integración de APIs RESTful y SOAP para conectar aplicaciones con servicios externos de manera eficiente y segura.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
+                    <h4 class="font-weight-bold m-0">Desarrollo de Aplicaciones</h4>
+                </div>
+                <p>Desarrollo de aplicaciones móviles y sistemas IVR innovadores, mejorando la experiencia del usuario con tecnologías modernas.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
+                    <h4 class="font-weight-bold m-0">SEO y Optimización</h4>
+                </div>
+                <p>Optimización de sitios web para motores de búsqueda (SEO) y mejoras en el rendimiento para una mejor visibilidad y velocidad.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <i class="fa fa-2x fa-cogs service-icon bg-primary text-white mr-3"></i>
+                    <h4 class="font-weight-bold m-0">Automatización de Procesos</h4>
+                </div>
+                <p>Implementación de soluciones automatizadas para mejorar la eficiencia operativa, incluyendo la integración de chatbots y sistemas de facturación electrónica.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <i class="fa fa-2x fa-database service-icon bg-primary text-white mr-3"></i>
+                    <h4 class="font-weight-bold m-0">Gestión de Bases de Datos</h4>
+                </div>
+                <p>Diseño, implementación y mantenimiento de bases de datos utilizando MySQL, PostgreSQL y SQL Server, garantizando la integridad y seguridad de los datos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Servicios Fin -->
+
+
+    <!-- <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Design</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Development</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Marketing</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid py-5" id="testimonial">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Review</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Clients Say</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ -->
+    <!-- <div class="container-fluid pt-5" id="blog">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Latest Blog</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+ -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contactame</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contactame</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" name="name" id="name" placeholder="Tu nombre" required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" name="email" id="email" placeholder="Tu correo" required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" name="subject" id="subject" placeholder="Asunto" required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" name="message" rows="5" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Enviar mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/michael-cardenas-0216/"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://github.com/michcardenas"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#contactForm').on('submit', function(event) {
+        event.preventDefault(); // Evita el envío estándar del formulario
+
+        $.ajax({
+            url: 'send_mail.php',
+            type: 'POST',
+            data: $(this).serialize(), // Serializa los datos del formulario
+            success: function(response) {
+                $('#success').html('<div class="alert alert-success">Mensaje enviado con éxito</div>');
+                $('#contactForm')[0].reset(); // Limpia el formulario
+            },
+            error: function(xhr, status, error) {
+                $('#success').html('<div class="alert alert-danger">Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.</div>');
+            }
+        });
+    });
+});
+</script>
+
 </html>
