@@ -4,7 +4,7 @@
 
 ## 🧑‍💻 **Sobre mí**
 
-Soy un profesional comprometido con la excelencia en el desarrollo de software, con una sólida base en **PHP, Laravel, HTML, CSS, JavaScript**, y en la implementación de **APIs RESTful y SOAP**. Me destaco por mi capacidad para integrar pasarelas de pago y sistemas de facturación electrónica, adaptándome a entornos desafiantes y ofreciendo soluciones que superan las expectativas.
+Soy un profesional comprometido con la excelencia en el desarrollo de software, con una sólida base en **PHP, Laravel, HTML, CSS, JavaScript, nodejs**, y en la implementación de **APIs RESTful y SOAP**. Me destaco por mi capacidad para integrar pasarelas de pago y sistemas de facturación electrónica, adaptándome a entornos desafiantes y ofreciendo soluciones que superan las expectativas.
 
 ### **Especialidades**:
 - **Desarrollo Web**: Construcción de aplicaciones web robustas y escalables.
